@@ -34,7 +34,7 @@ Controllable voltage regulator to be controlled by digital pin 4.
 
 ## Future recommnendations
 
-  - remove or increase the timeout duration in the defined GPS location function in the event that
+  - remove or increase the timeout duration in the defined GPS location function in the event that system is deployed in heavily forested area, or in location with robust obstructions
 
   - NEO GPS: a more efficient and powerful GPS library, instead of tinyGPS++
 
