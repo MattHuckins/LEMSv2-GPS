@@ -15,6 +15,7 @@ The objective of this project is to incorperate a GPS module into the existing L
 <TinyGPS++.h>          // TimyGPS++ a GPS library
 
 #include <RTClibExtended.h>             // RTC Library - https://github.com/adafruit/RTClib
+
 // added '#define _BV(bit) (1 << (bit))' to RTClibExtended.h
 
 The one line of code must be added to the RTClibExtended.h file to fix a known issue with a bit being off.
