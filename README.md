@@ -31,7 +31,7 @@ The one line of code must be added to the RTClibExtended.h file to fix a known i
 
 ## Items to be selected
 
-Controllable voltage regulator to be controlled by digital pin 4.
+Controllable voltage regulator to be controlled by digital pin 4 for the powering on and off of the GPS module
 
 ## Future recommnendations
 
