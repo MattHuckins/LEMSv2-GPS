@@ -34,10 +34,10 @@ Controllable voltage regulator to be controlled by digital pin 4.
 
 ## Future recommnendations
 
-  - remove or increase the timeout duration in the defined GPS location function in the event that system is deployed in heavily forested area, or in location with robust obstructions
+  - remove or increase the timeout duration in the defined GPS location function in the code, in the event that system is deployed in heavily forested area, or in location with robust obstructions
 
   - NEO GPS: a more efficient and powerful GPS library, instead of tinyGPS++
 
-  - To account for differing satelite locations and satelite 'drift' that will possible be observed in the recorded location data at different times throughout the day, record GPS location multiple times throughout the day
+  - To account for differing satelite locations and satelite 'drift' that will possibly be observed in the recorded location data at different times throughout the day, record GPS location multiple times throughout the day
 
   - For additional power saving purposes to the general (and original) LEMSv2 datalogging feature, it may be beneficial to utilize the RAM on the SAMD 21 board. This could be done by logging weather data blocks in RAM, allowed by the total availible RAM, and then sending the blocks of data to the SD card instead of logging one row of data at a time to the SD card.
