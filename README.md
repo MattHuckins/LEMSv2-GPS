@@ -30,7 +30,7 @@ The objective of this project is to incorperate a GPS module into the existing L
   
 ## Items to be selected
 
-  - Controllable voltage regulator to be controlled by digital pin 4 for the powering on and off of the GPS module.
+  - Controllable voltage regulator to be controlled by digital pin 4 for the powering on and off of the GPS module. The code is already written to control pin D4 to turn the GPS on and off via the to be selected voltage regulator (They cost roughly $0.50/unit)
   
   - how many location points are desired by the user (adjust the for loop size and the size of the lists being stored in the defined function on lines : 179, 356, 370 )
 
