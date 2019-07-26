@@ -45,7 +45,8 @@ The objective of this project is to incorperate a GPS module into the existing L
 
   - For additional power saving purposes to the general (and original) LEMSv2 datalogging feature, it may be beneficial to utilize the RAM on the SAMD 21 board. This could be done by logging weather data blocks in RAM, allowed by the total availible RAM, and then sending the blocks of data to the SD card instead of logging one row of data at a time to the SD card.
 
-# Please contact me with any questions!!!
+# Please contact me with any questions!
   - chances are I ran into a similar issue you ran into
   - contact me at: huckinma@oregonstate.edu
+  
   
