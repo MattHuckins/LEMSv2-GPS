@@ -3,7 +3,7 @@ LEMSv2 GPS w/standalone option
 
 ## Intro
 
-The LEMSv2 is an open source environmental monitoring station, which was designed to be deployed for extended periods of time and powered by a 5W solar panel (More information can be found on Madvoid's LEMSv2 GitHub page.
+The LEMSv2 is an open source environmental monitoring station, which was designed to be deployed for extended periods of time and powered by a 5W solar panel (More information can be found on Madvoid's LEMSv2 GitHub page).
 
 ## Objective
 The objective of this project is to incorperate a GPS module into the existing LEMSv2 system, while considering the low energy consumption goals of the original LEMSv2 environmental monitoring system. The two main goals of the this project are: to use the GPS module to update the RTC if the system malfunctions in a manner that resets the RTC, to datalog multiple location data to an SD card for the purpose of secondary statistical analysis.
@@ -18,23 +18,26 @@ The objective of this project is to incorperate a GPS module into the existing L
 
 // added '#define _BV(bit) (1 << (bit))' to RTClibExtended.h
 
-The one line of code must be added to the RTClibExtended.h file to fix a known issue with a bit being off.
+  -This one line of code must be added to the RTClibExtended.h file to fix a known issue with a bit shift.
 
 ## Known issues
 
   -If you attempt to set the time in a completely indoor location, void of windows, the time will be set to 01/01/2000.
 
   -It was randomly observed that the SD card failed initialize and properly store the data in 1 of the 30 trail runs prior to the write up. Research on forums indicates that the default SD library has been observed to behave unusually.
-    
-    -asdf
+
+  -The SD.begin must be called twice or the initialization fails, which leads me to believe that either the SD library has a conflict, or the RX pin that was remapped from the A2 pin printed on the microcontroller may be used by the computer for an unknown process. However, the version included is stable
   
 ## Items to be selected
 
-Controllable voltage regulator to be controlled by digital pin 4 for the powering on and off of the GPS module
+  -Controllable voltage regulator to be controlled by digital pin 4 for the powering on and off of the GPS module.
+  
+  -how many location points are desired by the user (adjust the for loop size and the size of the lists being stored in the defined function on lines : 179, 356, 370 )
+
 
 ## Future recommnendations
 
-  - remove or increase the timeout duration in the defined GPS location function in the code, in the event that system is deployed in heavily forested area, or in location with robust obstructions
+  - remove or increase the timeout duration in the defined GPS location function in the code, in the event that system is deployed in heavily forested area, or in location with robust obstructions, to grant or deny the system additional time to perform functions
 
   - NEO GPS: a more efficient and powerful GPS library, instead of tinyGPS++
 
