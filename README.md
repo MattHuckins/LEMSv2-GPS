@@ -20,15 +20,12 @@ The objective of this project is to incorperate a GPS module into the existing L
 
 The one line of code must be added to the RTClibExtended.h file to fix a known issue with a bit being off.
 
-
-## Summary of functionallity
-
 ## Known issues
 
 -If you attempt to set the time in a completely indoor location, void of windows, the time will be set to 01/01/2000.
 
--It was randomly observed that the SD card failed initialize and properly store the data in 1 of the 30 trail runs prior to the write up.
-
+-It was randomly observed that the SD card failed initialize and properly store the data in 1 of the 30 trail runs prior to the write up. Research on forums indicates that the default SD library has been observed to behave unusually.
+--
 ## Items to be selected
 
 Controllable voltage regulator to be controlled by digital pin 4 for the powering on and off of the GPS module
