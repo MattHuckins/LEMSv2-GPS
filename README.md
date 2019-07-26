@@ -18,21 +18,21 @@ The objective of this project is to incorperate a GPS module into the existing L
 
 // added '#define _BV(bit) (1 << (bit))' to RTClibExtended.h
 
-  -This one line of code must be added to the RTClibExtended.h file to fix a known issue with a bit shift.
+  - This one line of code must be added to the RTClibExtended.h file to fix a known issue with a bit shift.
 
 ## Known issues
 
-  -If you attempt to set the time in a completely indoor location, void of windows, the time will be set to 01/01/2000.
+  - If you attempt to set the time in a completely indoor location, void of windows, the time will be set to 01/01/2000.
 
-  -It was randomly observed that the SD card failed initialize and properly store the data in 1 of the 30 trail runs prior to the write up. Research on forums indicates that the default SD library has been observed to behave unusually.
+  - It was randomly observed that the SD card failed initialize and properly store the data in 1 of the 30 trail runs prior to the write up. Research on forums indicates that the default SD library has been observed to behave unusually.
 
   -The SD.begin must be called twice or the initialization fails, which leads me to believe that either the SD library has a conflict, or the RX pin that was remapped from the A2 pin printed on the microcontroller may be used by the computer for an unknown process. However, the version included is stable
   
 ## Items to be selected
 
-  -Controllable voltage regulator to be controlled by digital pin 4 for the powering on and off of the GPS module.
+  - Controllable voltage regulator to be controlled by digital pin 4 for the powering on and off of the GPS module.
   
-  -how many location points are desired by the user (adjust the for loop size and the size of the lists being stored in the defined function on lines : 179, 356, 370 )
+  - how many location points are desired by the user (adjust the for loop size and the size of the lists being stored in the defined function on lines : 179, 356, 370 )
 
 
 ## Future recommnendations
