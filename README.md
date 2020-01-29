@@ -26,7 +26,7 @@ The objective of this project is to incorperate a GPS module into the existing L
 
   - It was randomly observed that the SD card failed initialize and properly store the data in 1 of the 30 trail runs prior to the write up. Research on forums indicates that the default SD library has been observed to behave unusually.
 
-  -The SD.begin must be called twice or the initialization fails, which leads me to believe that either the SD library has a conflict, or the RX pin that was remapped from the A2 pin printed on the microcontroller may be used by the computer for an unknown process. However, the version included is stable
+  -The SD.begin must be called twice or the initialization fails, which leads me to believe that either the SD library has a conflict, or the RX pin that was remapped from the A2 pin printed on the microcontroller may be used by the computer for an unknown process. However, the version included is stable.
   
 ## Items to be selected
 
