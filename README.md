@@ -49,4 +49,10 @@ The objective of this project is to incorperate a GPS module into the existing L
   - chances are, I ran into a similar issue you are experiencing
   - contact me at: huckinma@oregonstate.edu
   
-  
+# Special Acknowledgements
+
+Thank your to:
+
+Luke Goertzen - This project would not have been made possible without your keen understanding of Arduino.
+Walt Mahaffee - For supporting me through this project and always offering valuable insight.
+Nipun Gunawardena - For providing the framework and structure of the LEMSv2 from which this tertiary project was created.
