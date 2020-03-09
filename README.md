@@ -57,4 +57,4 @@ Luke Goertzen - This project would not have been made possible without your keen
 
 Walt Mahaffee - For supporting me through this project and always offering valuable insight.
 
-Nipun Gunawardena - For providing the framework and structure of the LEMSv2 from which this tertiary project was created.
+Nipun Gunawardena - For providing the framework and structure of the LEMSv2 from which this supplamental project was created.
