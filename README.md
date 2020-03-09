@@ -8,6 +8,12 @@ The LEMSv2 is an open source environmental monitoring station, which was designe
 ## Objective
 The objective of this project is to incorperate a GPS module into the existing LEMSv2 system, while considering the low energy consumption goals of the original LEMSv2 environmental monitoring system. The two main goals of the this project are: to use the GPS module to update the RTC if the system malfunctions in a manner that resets the RTC, to create arrays of latitude and longitude stored on the SD card.
 
+## Summary of functionality
+
+Update the RTC of the system using the atomic clock on nearby satalites if the system malfunctions in a manner that resets the RTC
+
+Create arrays of latitude and longitude stored on the SD card at frequecies and lengths determined by the user
+
 ## Library additions to the original LEMSv2
 
 #include "variant.h"            // Multiplexing library for SAMD boards
