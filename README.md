@@ -3,7 +3,7 @@ LEMSv2 GPS w/standalone option
 
 ## Intro
 
-The LEMSv2 is an open source environmental monitoring station, which was designed to be deployed for extended periods of time and powered by a 5W solar panel (More information can be found on Madvoid's LEMSv2 GitHub page).
+The LEMSv2 is an open source environmental monitoring station, which was designed to be deployed for extended periods of time and powered by a 5W solar panel (More information can be found on Madvoid's LEMSv2 GitHub page: https://github.com/madvoid/LEMSv2).
 
 ## Objective
 The objective of this project is to incorperate a GPS module into the existing LEMSv2 system, while considering the low energy consumption goals of the original LEMSv2 environmental monitoring system. The two main goals of the this project are: to use the GPS module to update the RTC if the system malfunctions in a manner that resets the RTC, and to obtain sub-one-meter accuracy using using the low cost GPS module.
